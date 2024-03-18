@@ -145,7 +145,7 @@ git commit -m "Add new feature to image carousel"
 
 Keep in mind good commit message conventions, which will be covered later in this material.
 
-### Example output
+### Example output of git add & git status
 
 Running the `git status` command will show the changes that have been made to the codebase, and whether they have been added to the index.
 
@@ -219,6 +219,16 @@ Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
 	new file:   git.md
 ```
+
+#### Git status in terminal
+
+Running git status with uncommitted changes:
+![Terminal git status](./images/git/git-status-terminal.png)
+
+
+After changes have been added:
+![Terminal git status after git add](./images/git/git-status-terminal2.png)
+
 
 ### Changes in Visual Studio Code
 
@@ -347,6 +357,18 @@ When looking at the changes in Visual Studio Code, similar color coding is used.
 
 ![Visual Studio Code git diff](./images/git/git-diff-vscode.png)
 
+### Terminal & git diff
+
+`git diff` command might look something like this in terminal:
+
+![Terminal git diff](./images/git/git-diff-terminal.png)
+
+## Git push
+
+After the `git add` and `git commit` commands are executed, and perhaps `git status` is used to verify, it is time to push the changes. This can be done by using `git push` command.
+
+This command will send the local committed changes to the remote repository (GitHub, GitLab). Once the push command is complete, the changes will be visible in the remote repository, and it is possible for other people to pull the changes to their local repository, or it is time to make the pull request.
+
 ## Pull requests
 
 Pull requests are used to propose changes to the codebase. They are used to notify other developers about the changes that have been made, and to request that the changes be reviewed and merged into the main codebase. They provide transparency and visibility into the changes that are being made, and allow other developers to provide feedback before the changes are merged.
@@ -362,6 +384,28 @@ When creating a pull request, write a clear and descriptive title and descriptio
 When creating a pull request, it is possible to assign the pull request to the appropriate person, and to request a review from them. This will notify the person that the pull request is ready for review, and will allow them to provide feedback before the changes are merged into the main codebase. This of course depends on the platform used, such as GitHub, GitLab, Bitbucket, etc, as well as the project's policies, procedures, and conventions.
 
 When working with multiple developers, even in a school settings, pull requests should be used to merge one's changes into the main codebase. At first it might feel a bit odd to create a pull request for your own changes, instead of just committing code to the main branch and pushing the changes. This is normal and expected, but still, use pull requests.
+
+## Git pull
+
+Once the changes are pushed to remote, it is possible to pull them to local repository. This is done by using `git pull` command.
+
+This command will fetch the changes from the remote repository and copy them locally. If pull requests are used, this command will pull the changes from the pull request branch to the local repository. The pull request branch might not be the main branch, such as `main` or `master`, but instead it should be a feature branch, such as `feature/feature-name`.
+
+Once the pull request is completed, the changes will be in the main branch.
+
+Tip: if you are unsure of which changes are copied from remote to local, run `git log` command after git pull to see the git commit messages.
+
+### Possible git pull issues
+
+Sometimes `git pull` command will fail because local repository has uncommitted changes on the same files that are being pulled from remote.
+
+These failures are usually called `conflicts`, and they are a normal part of the development process.
+
+This can be solved by either committing the local changes, or by stashing them.
+
+Protip: When working on a team project, first thing to do every day is to pull. Also when changing branches, pull. This shoud decrease the number of conflicts.
+
+When a conflict happens, you need to slow down and figure out what is happening and why. Sometimes you need to consult the other developer who has made the changes. Sometimes the other developer is you.
 
 ## Git and GitHub (and other platforms)
 
