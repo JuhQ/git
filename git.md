@@ -57,11 +57,15 @@ Git has many commands, for now we only need the initial five basic commands for 
 
 ## Note on git commands
 
-Git commands are executed in the folder where the `.git` directory is located. This is usually the root directory of the project. For example, if your project is located in absolute path of `/usr/home/username/projects/my-project`, you should navigate to that directory before running any git commands. Running any git commands outside of the root directory of the project will result in an error, or other unexpected behavior.
+Git commands are executed in terminal, in the folder where the `.git` directory is located. This is usually the root directory of the project. For example, if your project is located in absolute path of `/usr/home/username/projects/my-project`, you should navigate to that directory before running any git commands. Running any git commands outside of the root directory of the project will result in an error, or other unexpected behavior.
 
-## Basic Workflow
+Git can also be used through graphical user interfaces, but we will only focus on the terminal commands in this material.
 
-When creating a new project, the first step is to initialize a new git repository. This is done by running the `git init` command in the root directory of the project. This will create a new `.git` directory in the root of the project, which will contain all the necessary files for the repository. The init command is only be run once, when the project is first created.
+## Basic Workflow - git init
+
+When creating a new project, the first step is to initialize a new git repository. This is done by running the `git init` command in the directory of the project. This will create a new `.git` directory in the root of the project, which will contain all the necessary files for the repository. The init command is only be run once, when the project is first created.
+
+The `.git` folder is a hidden folder and we do not need to interact with it directly. It contains all the necessary files for the repository, such as the configuration, the index, the object database, and the logs. If some catastrophy happens, it is possible to delete the folder, but this should be left as the last resort. Instead, google the error message, ask around. Most likely the issue is not unique.
 
 ## .gitignore
 
