@@ -106,6 +106,7 @@ The `git branch` command is used to list, create, or delete branches. The `git c
 When working on a new feature or fixing a bug, it is a good idea to create a new branch for the changes. This will isolate the changes from the main codebase, and will make it easier to merge the changes back into the main codebase once they are complete.
 
 ![Screenhot of the JetBrain IDE Branches](./images/git/JetBrain-Branches.png)
+
 In the picture, we can see multiple branches. Some feature branches are merged before they are merged with the main branch. 
 Sometimes we can pull a new version of the main to the feature branch. So as can be pulled from other branches as well. For example, we have a branch where a bug is fixed and you need the fix for your feature. You can pull the fix branch to your current feature branch.
 
