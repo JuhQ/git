@@ -8,8 +8,6 @@ Git allows simultaneous work on the same codebase through the usage of branches,
 
 Have a look at the git website and wikipedia.
 
-
-
 - [git-scm.com](https://git-scm.com/)
 - [wikipedia entry for git](https://en.wikipedia.org/wiki/Git)
 
