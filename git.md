@@ -76,7 +76,7 @@ For example in javascript projects, the `.gitignore` file might look like this:
 ```
 node_modules/
 dist/
-.env
+*.env
 ```
 
 This will tell git to ignore the `node_modules` directory, the `dist` directory, and any file named `.env`.
