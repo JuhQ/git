@@ -6,6 +6,8 @@ Version control systems are important part of the daily operations of any softwa
 
 Git allows simultaneous work on the same codebase through the usage of branches, which we'll cover later in this material.
 
+
+
 Have a look at the git website and wikipedia.
 
 - [git-scm.com](https://git-scm.com/)
