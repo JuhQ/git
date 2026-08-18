@@ -414,8 +414,6 @@ Protip: When working on a team project, first thing to do every day is to pull. 
 
 When a conflict happens, you need to slow down and figure out what is happening and why. Sometimes you need to consult the other developer who has made the changes. Sometimes the other developer is you.
 
-This line is added in the editor. Local and remote are now in different states, which will cause a conflict when trying to pull the changes from remote.
-
 ## Git and GitHub (and other platforms)
 
 While git and GitHub sound familiar and might seem synonymous, they are not. Git is a version control system, while GitHub is a web-based platform that provides hosting for software development and version control using Git. GitHub provides a number of features, such as bug tracking, feature requests, task management, and wikis for every project. It also provides a web-based graphical interface for working with git repositories.
