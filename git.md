@@ -414,6 +414,14 @@ Protip: When working on a team project, first thing to do every day is to pull. 
 
 When a conflict happens, you need to slow down and figure out what is happening and why. Sometimes you need to consult the other developer who has made the changes. Sometimes the other developer is you.
 
+![git conflict in vscode](images/git/git-conflict-vscode.png)
+
+Screenshot of a conflict in Visual Studio Code. The conflict is caused by changes made to the same lines of code in the same file, in both the local and remote repositories.
+
+![git conflict merge in vscode](images/git/git-conflict-merge-vscode.png)
+
+VSCode provides a graphical interface for resolving conflicts. Local changes are shown on the right side, and remote changes are shown on the left side. The outcome of the merge is shown on the bottom. The developer can choose to keep the local changes, keep the remote changes, or keep both changes. Once the conflict is resolved, the developer can save the file and commit the changes.
+
 ## Git and GitHub (and other platforms)
 
 While git and GitHub sound familiar and might seem synonymous, they are not. Git is a version control system, while GitHub is a web-based platform that provides hosting for software development and version control using Git. GitHub provides a number of features, such as bug tracking, feature requests, task management, and wikis for every project. It also provides a web-based graphical interface for working with git repositories.
