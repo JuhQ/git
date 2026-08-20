@@ -439,3 +439,14 @@ You might be reading this text on GitHub. Feel free to make a pull request to th
 ![GitHub edit button](images/git/github-edit-button.png)
 
 Clicking on the edit button will open the file in GitHub's web-based editor, where you can make changes to the file. Once you have made the changes, you can create a pull request to submit the changes for review.
+
+## Additional Material for Studying Git
+
+Below are a few useful links for those who are interested:
+
+- [Atlassian: What is version control?](https://www.atlassian.com/git/tutorials/what-is-version-control)
+- [Git videos](https://git-scm.com/videos)
+- [Pro Git](http://git-scm.com/book/en/v2) - free book
+- [Git Cheat Sheet](https://git-scm.com/cheat-sheet) - a collection of the most important commands
+- [Wikipedia entry for git](https://en.wikipedia.org/wiki/Git)
+- [Codecademy: Learn Git](https://www.codecademy.com/learn/learn-git)
